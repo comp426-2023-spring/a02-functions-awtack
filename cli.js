@@ -15,7 +15,7 @@ const lati = args.n || args.s * -1;
 const longi = args.e || args.w *-1;
 
 
-const request = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude+ '&daily=precipitation_hours&timezone=' + timezone);
+const request = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lati + '&longitude=' + longi+ '&daily=precipitation_hours&timezone=' + tizo);
 const response = await request.json();
 
 
