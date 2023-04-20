@@ -10,7 +10,10 @@ import moment from "moment-timezone";
 
 const args = minimist(process.argv.slice(2));
 const tizo = args.z || moment.tz.guess();
-const day = args.d;
+
+const day = 1;
+if('d' in args){
+    day = args.d}
     
 const lati = args.n || args.s * -1;
 const longi = args.e || args.w *-1;
