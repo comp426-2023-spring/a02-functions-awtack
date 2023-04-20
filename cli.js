@@ -42,26 +42,31 @@ const daily_rain = response.daily.precipitation_hours[day]
 if(day==0){
     if(daily_rain > 0){
         console.log('Today is Rhianna time(get your Umbrella) you might need galoshes')
+        process.exit(0);
     }
     else{
         console.log('Its probably pretty dry today, dont get out the galoshes')
+        process.exit(0);
     }
-
 }
 else if(day==1){
     if(daily_rain > 0){
         console.log('Tomorrow is a good day for Gene Kelly(he will be singing in the rain) you might need galoshes')
+        process.exit(0);
     }
     else{
         console.log('Its probably dry tomorrow, dont get out the galoshes')
+        process.exit(0);
     }
 }
 else{
     if(daily_rain>0){
         console.log('You wont catch me outside without galoshes in'+day+'days')
+        process.exit(0);
     }
     else{
         console.log('it will be a good day for sneakers(not galoshes) in'+day+'days')
+        process.exit(0);
     }
 }
 
