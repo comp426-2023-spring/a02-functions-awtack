@@ -13,7 +13,7 @@ const tizo = args.z || moment.tz.guess();
 
 const day = 1;
 if('d' in args){
-    day = args.d}
+    day = args.d;}
     
 const lati = args.n || args.s * -1;
 const longi = args.e || args.w *-1;
