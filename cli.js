@@ -10,7 +10,7 @@ import moment from "moment-timezone";
 
 const args = minimist(process.argv.slice(2));
 const tizo = args.z || moment.tz.guess();
-const day = args.d
+const day = args.d;
     
 const lati = args.n || args.s * -1;
 const longi = args.e || args.w *-1;
@@ -42,31 +42,31 @@ const daily_rain = response.daily.precipitation_hours[day]
 
 if(day==0){
     if(daily_rain > 0){
-        console.log('Today is Rhianna time(get your Umbrella) you might need galoshes')
+        console.log('Today is Rhianna time(get your Umbrella) you might need galoshes');
         process.exit(0);
     }
     else{
-        console.log('Its probably pretty dry today, dont get out the galoshes')
+        console.log('Its probably pretty dry today, dont get out the galoshes');
         process.exit(0);
     }
 }
 else if(day==1){
     if(daily_rain > 0){
-        console.log('Tomorrow is a good day for Gene Kelly(he will be singing in the rain) you might need galoshes')
+        console.log('Tomorrow is a good day for Gene Kelly(he will be singing in the rain) you might need galoshes');
         process.exit(0);
     }
     else{
-        console.log('Its probably dry tomorrow, dont get out the galoshes')
+        console.log('Its probably dry tomorrow, dont get out the galoshes');
         process.exit(0);
     }
 }
 else{
     if(daily_rain>0){
-        console.log('You wont catch me outside without galoshes in'+day+'days')
+        console.log('You wont catch me outside without galoshes in'+day+'days');
         process.exit(0);
     }
     else{
-        console.log('it will be a good day for sneakers(not galoshes) in'+day+'days')
+        console.log('it will be a good day for sneakers(not galoshes) in'+day+'days');
         process.exit(0);
     }
 }
